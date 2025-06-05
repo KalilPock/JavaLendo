@@ -8,4 +8,9 @@ public class MeioCampista extends Jogador{
         super(nome, idade, numero, posicao);
         this.visaoDeJogo = visaoDeJogo;
     }
+
+    @Override
+    public void exibirInfo(){
+        System.out.println("O meio campista: " + nome+ "camisa: " + numero + "posicao: " + posicao);
+    }
 }

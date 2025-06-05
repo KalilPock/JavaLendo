@@ -8,4 +8,5 @@ public class Tecnico extends Pessoa{
         super(nome, idade);
     }
 
+    
 }

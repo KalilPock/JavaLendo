@@ -8,4 +8,9 @@ public class Zagueiro extends Jogador{
         super(nome, idade, numero, posicao);
         this.desarme = desarme;
     }   
+
+    @Override
+    public void exibirInfo(){
+        System.out.println("O zagueiro: " + nome + "camisa: " + numero + "posicao: " + posicao);
+    }
 }

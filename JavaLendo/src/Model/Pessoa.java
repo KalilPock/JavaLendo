@@ -10,6 +10,6 @@ public abstract class Pessoa {
     }
 
     public void exibirInfo(){
-
+        System.out.println();
     }
 }

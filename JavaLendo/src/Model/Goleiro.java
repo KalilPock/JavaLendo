@@ -9,4 +9,8 @@ public class Goleiro extends Jogador{
         this.defesa = defesa;
     }
     
+    @Override
+    public void exibirInfo(){
+        System.out.println("O goleiro: " + nome);
+    }
 }
