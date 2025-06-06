@@ -2,7 +2,7 @@ package Model;
 
 public class Atacante extends Jogador{
     
-    protected int gols;
+    private int gols;
 
     public Atacante(String nome, int idade, int numero, String posicao) {
         super(nome, idade, numero, posicao);
@@ -10,6 +10,6 @@ public class Atacante extends Jogador{
 
     @Override
     public void exibirInfo(){
-        System.out.println("O atacante: " + nome+ "camisa: " + numero + "posicao: " + posicao);
+        System.out.println("O atacante: " + getNome() + "camisa: " + getNumero() + "posicao: " + getPosicao());
     }
 }
