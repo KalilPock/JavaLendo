@@ -1,8 +1,8 @@
 package Model;
 
 public class Jogador extends Pessoa{
-    protected int numero;
-    protected String posicao;
+    private int numero;
+    private String posicao;
 
     public Jogador(String nome, int idade, int numero, String posicao) {
         super(nome, idade);
@@ -10,8 +10,35 @@ public class Jogador extends Pessoa{
         this.posicao = posicao;
     }
 
+    public int getNumero() {
+        return numero;
+    }
+
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+
+    public String getPosicao() {
+        return posicao;
+    }
+
+
+    public void setPosicao(String posicao) {
+        this.posicao = posicao;
+    } 
+
+    // public void tipoJogador(){
+    //     boolean visaoDeJogo;
+    //     String estiloTatica;
+    //     String desarme;
+    //     int gols;
+    //     String defesa;
+    // }
+    
     @Override
     public void exibirInfo(){
-        System.out.println("O jogador: " + nome + "camisa: " + numero + "posicao: " + posicao);
-    } 
+        System.out.println("O jogador: " + getNome() + "camisa: " + getNumero() + "posicao: " + getPosicao());
+    }
 }
