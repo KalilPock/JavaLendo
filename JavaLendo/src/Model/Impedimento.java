@@ -8,6 +8,6 @@ class Impedimento extends EventoPartida {
 
     @Override
     public String getDescricao() {
-        return getJogador().nome + " ficou impedido aos " + getMinuto() + " minutos.";
+        return getJogador().getNome() + " ficou impedido aos " + getMinuto() + " minutos.";
     }
 }

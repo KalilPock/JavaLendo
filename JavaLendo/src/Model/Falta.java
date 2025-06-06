@@ -9,6 +9,6 @@ class Falta extends EventoPartida {
 
     @Override
     public String getDescricao() {
-        return "Falta " + tipoFalta + " cometida por " + getJogador().nome + " aos " + getMinuto() + " minutos.";
+        return "Falta " + tipoFalta + " cometida por " + getJogador().getNome() + " aos " + getMinuto() + " minutos.";
     }
 }

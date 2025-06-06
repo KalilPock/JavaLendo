@@ -9,6 +9,6 @@ class Cartao extends EventoPartida {
 
     @Override
     public String getDescricao() {
-        return "Cartão " + tipoCartao + " para " + getJogador().nome + " aos " + getMinuto() + " minutos.";
+        return "Cartão " + tipoCartao + " para " + getJogador().getNome() + " aos " + getMinuto() + " minutos.";
     }
 }

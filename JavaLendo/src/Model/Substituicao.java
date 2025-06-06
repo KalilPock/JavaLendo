@@ -10,6 +10,6 @@ class Substituicao extends EventoPartida {
 
     @Override
     public String getDescricao() {
-        return "Substituição aos " + getMinuto() + " minutos: Sai " + getJogador().nome + ", entra " + substituto.nome;
+        return "Substituição aos " + getMinuto() + " minutos: Sai " + getJogador().getNome() + ", entra " + substituto.getNome();
     }
 }

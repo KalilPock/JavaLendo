@@ -10,6 +10,6 @@ class Gol extends EventoPartida {
 
     @Override
     public String getDescricao() {
-        return "Gol de " + getJogador().nome + (dePenalti ? " (Pênalti)" : "") + " aos " + getMinuto() + " minutos.";
+        return "Gol de " + getJogador().getNome() + (dePenalti ? " (Pênalti)" : "") + " aos " + getMinuto() + " minutos.";
     }
 }
